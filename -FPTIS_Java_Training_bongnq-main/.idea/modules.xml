@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Topic01/01_Mini_Ex_1/01_Mini_Ex_1.iml" filepath="$PROJECT_DIR$/Topic01/01_Mini_Ex_1/01_Mini_Ex_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Topic01/01_Mini_Ex_2/01_Mini_Ex_2.iml" filepath="$PROJECT_DIR$/Topic01/01_Mini_Ex_2/01_Mini_Ex_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Topic01/Fresher_Collection_MiniEx_01/Fresher_Collection_MiniEx_01.iml" filepath="$PROJECT_DIR$/Topic01/Fresher_Collection_MiniEx_01/Fresher_Collection_MiniEx_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Topic01/Mini_Exercises_1/Mini_Exercise_lab2_01/Mini_Exercise_lab2_01.iml" filepath="$PROJECT_DIR$/Topic01/Mini_Exercises_1/Mini_Exercise_lab2_01/Mini_Exercise_lab2_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Topic01/Mini_Exercises_1/Mini_Exercise_lab2_02/Mini_Exercise_lab2_02.iml" filepath="$PROJECT_DIR$/Topic01/Mini_Exercises_1/Mini_Exercise_lab2_02/Mini_Exercise_lab2_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Topic01_OOP_Arrays.iml" filepath="$PROJECT_DIR$/.idea/Topic01_OOP_Arrays.iml" />
+    </modules>
+  </component>
+</project>

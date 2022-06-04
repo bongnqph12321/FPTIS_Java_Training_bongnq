@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
+    <output url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/${project.build.directory}/classes" />
+    <output-test url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/${project.build.directory}/test-classes" />
+    <content url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022">
+      <sourceFolder url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/${project.build.directory}/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/${project.build.directory}/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../-FPTIS_Java_Training_bongnq-main/Topic01/fis-training-collection-06-2022/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
