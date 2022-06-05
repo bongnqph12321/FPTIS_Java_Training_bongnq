@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Sprint1" />
         <module name="fis-training-collection-06-2022" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fis-training-collection-06-2022" target="16" />
+      <module name="Sprint1" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
