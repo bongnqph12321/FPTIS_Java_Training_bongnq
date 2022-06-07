@@ -6,15 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Sprint1" />
         <module name="fis-training-collection-06-2022" />
+        <module name="Sprint1" />
         <module name="fresher-jdbc-bongnq" />
+        <module name="Ex_Stack_Queue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Ex_Stack_Queue" target="16" />
       <module name="fis-training-collection-06-2022" target="16" />
       <module name="fresher-jdbc-bongnq" target="16" />
+      <module name="fresher-jdbc-miniEx01" target="16" />
       <module name="fresher-jdbc-mysql-demo" target="16" />
+      <module name="fresher_jdbc_miniEx01" target="16" />
       <module name="Sprint1" target="16" />
     </bytecodeTargetLevel>
   </component>
