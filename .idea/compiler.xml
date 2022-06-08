@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="fresher-excek-maven" />
         <module name="fis-training-collection-06-2022" />
+        <module name="fresher-oracle-java-ioo" />
         <module name="Sprint1" />
         <module name="fresher-jdbc-bongnq" />
         <module name="Ex_Stack_Queue" />
@@ -15,11 +17,14 @@
     <bytecodeTargetLevel>
       <module name="Ex_Stack_Queue" target="16" />
       <module name="fis-training-collection-06-2022" target="16" />
+      <module name="fresher-excek-maven" target="16" />
       <module name="fresher-jdbc-bongnq" target="16" />
       <module name="fresher-jdbc-miniEx01" target="16" />
       <module name="fresher-jdbc-mysql-demo" target="16" />
+      <module name="fresher-oracle-java-ioo" target="16" />
       <module name="fresher_jdbc_miniEx01" target="16" />
       <module name="Sprint1" target="16" />
+      <module name="Topic03_IO_NIO_Excel" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
