@@ -38,7 +38,7 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
     public List<CriminalCase> getAll() {
         List<CriminalCase> criminalCases = new ArrayList<>();
         try (Connection con =
-                     DriverManager.getConnection (URL, USER_NAME, PASSWORD);
+             DriverManager.getConnection (URL, USER_NAME, PASSWORD);
              PreparedStatement stmt = con.prepareStatement("SELECT * FROM criminal_case");
              ResultSet rs = stmt.executeQuery ()) {
 
