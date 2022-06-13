@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Junit5_demo" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -10,6 +13,7 @@
         <option value="$PROJECT_DIR$/fresher_jdbc_miniEx01/pom.xml" />
         <option value="$PROJECT_DIR$/Ex_Stack_Queue/pom.xml" />
         <option value="$PROJECT_DIR$/Topic03_IO_NIO_Excel/pom.xml" />
+        <option value="$PROJECT_DIR$/bongnq_Sprint02/pom.xml" />
       </list>
     </option>
   </component>
