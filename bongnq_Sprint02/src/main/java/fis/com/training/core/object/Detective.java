@@ -82,4 +82,7 @@ public class Detective {
     public void setTrackEntries(Set<TrackEntry> trackEntries) {
         this.trackEntries = trackEntries;
     }
+
+    public void replaceWith(Detective detective) {
+    }
 }

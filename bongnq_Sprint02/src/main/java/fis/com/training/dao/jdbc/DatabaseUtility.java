@@ -8,7 +8,7 @@ import java.beans.PropertyVetoException;
 import java.sql.Connection;
 
 public class DatabaseUtility {
-    public final static String URL = "jdbc:mysql://localhost:3306/criminal_edivence_db";
+    public final static String URL = "jdbc:mysql://localhost:3306/criminal_system";
     public final static String USER_NAME = "root";
     public final static String PASSWORD = "nguyenquybong199";
 
@@ -44,10 +44,10 @@ public class DatabaseUtility {
         return con;
     }
 
-
-    //private static HikariConfig config = new HikariConfig("datasource.properties");
-    private static HikariConfig config = new HikariConfig();
     private static HikariDataSource ds;
+    private static HikariConfig config = new HikariConfig("datasource.properties");
+    //private static HikariConfig config = new HikariConfig();
+
 
     static {
         config.setJdbcUrl( URL );

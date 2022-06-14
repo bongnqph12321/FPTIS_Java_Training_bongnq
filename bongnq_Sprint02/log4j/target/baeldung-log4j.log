@@ -1,40 +1,22 @@
-2022-06-13 18:48:26 DEBUG HikariPool-1 - configuration:
-2022-06-13 18:48:26 DEBUG allowPoolSuspension.............false
-2022-06-13 18:48:26 DEBUG autoCommit......................true
-2022-06-13 18:48:26 DEBUG catalog.........................none
-2022-06-13 18:48:26 DEBUG connectionInitSql...............none
-2022-06-13 18:48:26 DEBUG connectionTestQuery.............none
-2022-06-13 18:48:26 DEBUG connectionTimeout...............30000
-2022-06-13 18:48:26 DEBUG dataSource......................none
-2022-06-13 18:48:26 DEBUG dataSourceClassName.............none
-2022-06-13 18:48:26 DEBUG dataSourceJNDI..................none
-2022-06-13 18:48:26 DEBUG dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, prepStmtCacheSize=250}
-2022-06-13 18:48:26 DEBUG driverClassName.................none
-2022-06-13 18:48:26 DEBUG exceptionOverrideClassName......none
-2022-06-13 18:48:26 DEBUG healthCheckProperties...........{}
-2022-06-13 18:48:26 DEBUG healthCheckRegistry.............none
-2022-06-13 18:48:26 DEBUG idleTimeout.....................600000
-2022-06-13 18:48:26 DEBUG initializationFailTimeout.......1
-2022-06-13 18:48:26 DEBUG isolateInternalQueries..........false
-2022-06-13 18:48:26 DEBUG jdbcUrl.........................jdbc:mysql://localhost:3306/criminal_edivence_db
-2022-06-13 18:48:26 DEBUG leakDetectionThreshold..........0
-2022-06-13 18:48:26 DEBUG maxLifetime.....................1800000
-2022-06-13 18:48:26 DEBUG maximumPoolSize.................10
-2022-06-13 18:48:26 DEBUG metricRegistry..................none
-2022-06-13 18:48:26 DEBUG metricsTrackerFactory...........none
-2022-06-13 18:48:26 DEBUG minimumIdle.....................10
-2022-06-13 18:48:26 DEBUG password........................<masked>
-2022-06-13 18:48:26 DEBUG poolName........................"HikariPool-1"
-2022-06-13 18:48:26 DEBUG readOnly........................false
-2022-06-13 18:48:26 DEBUG registerMbeans..................false
-2022-06-13 18:48:26 DEBUG scheduledExecutor...............none
-2022-06-13 18:48:26 DEBUG schema..........................none
-2022-06-13 18:48:26 DEBUG threadFactory...................internal
-2022-06-13 18:48:26 DEBUG transactionIsolation............default
-2022-06-13 18:48:26 DEBUG username........................"root"
-2022-06-13 18:48:26 DEBUG validationTimeout...............5000
-2022-06-13 18:48:26 INFO  HikariPool-1 - Starting...
-2022-06-13 18:48:26 DEBUG Loaded driver with class name com.mysql.cj.jdbc.Driver for jdbcUrl=jdbc:mysql://localhost:3306/criminal_edivence_db
-2022-06-13 18:48:28 DEBUG HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@119020fb
-2022-06-13 18:48:28 INFO  HikariPool-1 - Start completed.
-2022-06-13 18:48:28 DEBUG HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-06-14 22:58:26 INFO  initDataEachTest
+2022-06-14 22:58:26 INFO  initTest
+2022-06-14 22:58:26 INFO  clearDataEachTest
+2022-06-14 22:58:26 INFO  initDataEachTest
+2022-06-14 22:58:26 INFO  initTest
+2022-06-14 22:58:26 INFO  test getAll
+2022-06-14 22:58:26 INFO  clearDataEachTest
+2022-06-14 22:58:26 INFO  initDataEachTest
+2022-06-14 22:58:26 INFO  initTest
+2022-06-14 22:58:26 INFO  test update
+2022-06-14 22:58:26 INFO  clearDataEachTest
+2022-06-14 22:58:26 INFO  initDataEachTest
+2022-06-14 22:58:26 INFO  initTest
+2022-06-14 22:58:26 INFO  clearDataEachTest
+2022-06-14 22:58:26 INFO  initDataEachTest
+2022-06-14 22:58:26 INFO  initTest
+2022-06-14 22:58:26 INFO  test get
+2022-06-14 22:58:26 INFO  clearDataEachTest
+2022-06-14 22:58:26 INFO  initDataEachTest
+2022-06-14 22:58:26 INFO  initTest
+2022-06-14 22:58:26 INFO  clearDataEachTest
+2022-06-14 22:58:26 INFO  clearTest

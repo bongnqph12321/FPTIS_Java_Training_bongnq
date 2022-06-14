@@ -54,11 +54,38 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
 
     @Override
     public void update(CriminalCase criminalCase) {
-
+        try(Connection con = DatabaseUtility.getConnection()) {
+            PreparedStatement stmt =
+                    con.prepareStatement("UPDATE criminalcase " +
+                            "SET version = ?,createdAt = ?, modifiedAt = ?, number = ?, type = ?, " +
+                            "short_description = ?, detailed_description = ?" +
+                            ",status = ?, notes = ?, lead_investigator = ? WHERE id = ?");
+            stmt.setInt(1,criminalCase.getVersion());
+            stmt.setDate(2, Date.valueOf(criminalCase.getCreatedAt().toLocalDate()));
+            stmt.setDate(3, Date.valueOf(criminalCase.getModifiedAt().toLocalDate()));
+            stmt.setString(4,criminalCase.getNumber());
+            stmt.setString(5, criminalCase.getType().toString());
+            stmt.setString(6,criminalCase.getShortDescription());
+            stmt.setString(7,criminalCase.getDetailedDescription());
+            stmt.setString(8, criminalCase.getStatus().toString());
+            stmt.setString(9, criminalCase.getNotes());
+            stmt.setLong(10, criminalCase.getLeadInvestigator().getId());
+            stmt.setLong(11,criminalCase.getId());
+            stmt.executeUpdate();
+        }catch (Exception ex) {
+            logger.error(ex.toString());
+        }
     }
 
     @Override
     public void delete(CriminalCase criminalCase) {
-
+        try(Connection con = DatabaseUtility.getConnection()) {
+            PreparedStatement stmt =
+                    con.prepareStatement("DELETE FROM criminalcase WHERE id = ?");
+            stmt.setLong(1,criminalCase.getId());
+            stmt.executeUpdate();
+        }catch (Exception ex) {
+            logger.error(ex.toString());
+        }
     }
 }

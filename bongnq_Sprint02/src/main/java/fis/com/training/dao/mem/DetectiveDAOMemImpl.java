@@ -11,12 +11,17 @@ public class DetectiveDAOMemImpl implements IDetectiveDAO {
 
     @Override
     public void save(Detective detective) {
-
+        if(
+           !MemoryDataSource.DETECTIVES.stream().filter(item -> item.getId()==detective.getId()).findFirst().isPresent()
+        )
+            MemoryDataSource.DETECTIVES.add(detective);
     }
 
     @Override
     public Optional<Detective> get(long id) {
-        return Optional.empty();
+        return MemoryDataSource.DETECTIVES.stream()
+                .filter(criminalCase -> criminalCase.getId()==id)
+                .findFirst();
     }
 
     @Override
@@ -26,7 +31,11 @@ public class DetectiveDAOMemImpl implements IDetectiveDAO {
 
     @Override
     public void update(Detective detective) {
-
+        Optional<Detective> detectives = get(detective.getId());
+        if(detectives.isPresent()){
+            Detective updatedDetective = detectives.get();
+            updatedDetective.replaceWith(detective);
+        }
     }
 
     @Override

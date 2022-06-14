@@ -20,4 +20,14 @@ class JDBCCriminalCaseDAOTest {
         //A3: Assert
         System.out.println(criminalCaseList);
     }
+
+    @Test
+    void update() {
+
+    }
+
+    @Test
+    void delete() {
+
+    }
 }
