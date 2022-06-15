@@ -20,13 +20,26 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
 
     @Override
     public boolean delete(long id) {
-
         return false;
     }
 
     @Override
     public void save(CriminalCase criminalCase) {
+        try (Connection con = DatabaseUtility.getConnection()) {
+            PreparedStatement stmt = con.prepareStatement("INSERT INTO criminal_case values (?,?,?,?,?,?,?,?)");
+            stmt.setLong(1, criminalCase.getId());
+            stmt.setString(2, criminalCase.getNumber());
+            stmt.setString(3, criminalCase.getType().toString());
+            stmt.setString(4, criminalCase.getShortDescription());
+            stmt.setString(5, criminalCase.getDetailedDescription());
+            stmt.setString(6, criminalCase.getStatus().toString());
+            stmt.setString(7, criminalCase.getNotes());
+            stmt.setString(8, criminalCase.getLeadInvestigator().getId());
+            stmt.executeUpdate ();
 
+        } catch (Exception ex) {
+            logger.error(ex.toString());
+        }
     }
 
     @Override
