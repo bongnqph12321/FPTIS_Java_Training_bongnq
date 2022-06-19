@@ -34,7 +34,6 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
             stmt.setString(5, criminalCase.getDetailedDescription());
             stmt.setString(6, criminalCase.getStatus().toString());
             stmt.setString(7, criminalCase.getNotes());
-            stmt.setString(8, criminalCase.getLeadInvestigator().getId());
             stmt.executeUpdate ();
 
         } catch (Exception ex) {

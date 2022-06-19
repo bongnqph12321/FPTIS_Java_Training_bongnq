@@ -23,4 +23,5 @@ public class CriminalCase extends AbstractEntity{
     private Set<Detective> assigned;
 
 
+
 }
