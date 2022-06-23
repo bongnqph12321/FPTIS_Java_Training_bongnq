@@ -8,19 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fresher-excek-maven" />
-        <module name="bongnq_Sprint02" />
         <module name="Sprint04" />
         <module name="fresher-oracle-java-ioo" />
+        <module name="Sprint02" />
+        <module name="Sprint01" />
         <module name="spring-boot-jdbc" />
         <module name="fis-training-collection-06-2022" />
-        <module name="Sprint1" />
         <module name="fis-training-test-02" />
         <module name="fresher-jdbc-bongnq" />
         <module name="Ex_Stack_Queue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bongnq_Sprint02" target="8" />
       <module name="Ex_Stack_Queue" target="16" />
       <module name="fis-training-collection-06-2022" target="16" />
       <module name="fis-training-test-02" target="1.8" />
@@ -33,8 +32,9 @@
       <module name="Junit05_demo" target="16" />
       <module name="Junit5_demo" target="16" />
       <module name="spring-boot-jdbc" target="9" />
+      <module name="Sprint01" target="16" />
+      <module name="Sprint02" target="8" />
       <module name="Sprint04" target="1.8" />
-      <module name="Sprint1" target="16" />
       <module name="Topic03_IO_NIO_Excel" target="16" />
     </bytecodeTargetLevel>
   </component>
