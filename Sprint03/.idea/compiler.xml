@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ride_tracker" />
         <module name="spring-boot-jdbc" />
+        <module name="fresher-building-applications-spring-jdbc-ok" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-boot-jdbc" target="9" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fresher-building-applications-spring-jdbc-ok" options="-parameters" />
+      <module name="ride_tracker" options="-parameters" />
       <module name="spring-boot-jdbc" options="-parameters" />
     </option>
   </component>

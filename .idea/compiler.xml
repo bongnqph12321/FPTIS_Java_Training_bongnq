@@ -9,7 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="fresher-excek-maven" />
         <module name="bongnq_Sprint02" />
+        <module name="Sprint04" />
         <module name="fresher-oracle-java-ioo" />
+        <module name="spring-boot-jdbc" />
         <module name="fis-training-collection-06-2022" />
         <module name="Sprint1" />
         <module name="fis-training-test-02" />
@@ -30,13 +32,17 @@
       <module name="fresher_jdbc_miniEx01" target="16" />
       <module name="Junit05_demo" target="16" />
       <module name="Junit5_demo" target="16" />
+      <module name="spring-boot-jdbc" target="9" />
+      <module name="Sprint04" target="1.8" />
       <module name="Sprint1" target="16" />
       <module name="Topic03_IO_NIO_Excel" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Sprint04" options="-parameters" />
       <module name="fis-training-test-02" options="-parameters" />
+      <module name="spring-boot-jdbc" options="-parameters" />
     </option>
   </component>
 </project>
