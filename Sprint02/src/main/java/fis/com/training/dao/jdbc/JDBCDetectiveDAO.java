@@ -1,7 +1,10 @@
 package fis.com.training.dao.jdbc;
 
 import fis.com.training.core.object.Detective;
+import fis.com.training.core.object.Person;
 import fis.com.training.dao.IDetectiveDAO;
+import fis.com.training.dao.util.DBMapper;
+import fis.com.training.dao.util.DatabaseUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +35,7 @@ public class JDBCDetectiveDAO implements IDetectiveDAO {
              ResultSet rs = stmt.executeQuery ()) {
 
             while (rs.next()) {
-                Detective detective = DatabaseMapper.getDetective(rs);
+                Detective detective = DBMapper.getDetective(rs);
                 if(detective != null) detectives.add(detective);
             } // end of while
         } catch (Exception e) {
@@ -42,12 +45,18 @@ public class JDBCDetectiveDAO implements IDetectiveDAO {
     }
 
     @Override
-    public void update(Detective detective) {
+    public Person update(Detective detective) {
 
+        return null;
     }
 
     @Override
     public void delete(Detective detective) {
 
+    }
+
+    @Override
+    public Detective getDetectiveById(long leadDetective) {
+        return null;
     }
 }

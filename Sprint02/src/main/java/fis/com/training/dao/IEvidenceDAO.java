@@ -5,4 +5,5 @@ import fis.com.training.core.object.Evidence;
 
 public interface IEvidenceDAO extends IDao<Evidence> {
 
+    Evidence getEvidenceById(long evidenceId);
 }

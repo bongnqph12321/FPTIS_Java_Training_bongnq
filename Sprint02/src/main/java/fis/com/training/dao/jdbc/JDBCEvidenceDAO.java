@@ -1,6 +1,7 @@
 package fis.com.training.dao.jdbc;
 
 import fis.com.training.core.object.Evidence;
+import fis.com.training.core.object.Person;
 import fis.com.training.dao.IEvidenceDAO;
 
 import java.util.List;
@@ -23,12 +24,18 @@ public class JDBCEvidenceDAO implements IEvidenceDAO {
     }
 
     @Override
-    public void update(Evidence evidence) {
+    public Person update(Evidence evidence) {
 
+        return null;
     }
 
     @Override
     public void delete(Evidence evidence) {
 
+    }
+
+    @Override
+    public Evidence getEvidenceById(long evidenceId) {
+        return null;
     }
 }

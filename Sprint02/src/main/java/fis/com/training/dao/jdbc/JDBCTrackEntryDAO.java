@@ -1,5 +1,6 @@
 package fis.com.training.dao.jdbc;
 
+import fis.com.training.core.object.Person;
 import fis.com.training.dao.ITrackEntryDAO;
 
 import java.util.List;
@@ -22,8 +23,9 @@ public class JDBCTrackEntryDAO implements ITrackEntryDAO {
     }
 
     @Override
-    public void update(Object o) {
+    public Person update(Object o) {
 
+        return null;
     }
 
     @Override

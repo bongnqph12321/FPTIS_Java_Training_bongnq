@@ -2,7 +2,10 @@ package fis.com.training.dao.jdbc;
 
 
 import fis.com.training.core.object.CriminalCase;
+import fis.com.training.core.object.Person;
 import fis.com.training.dao.ICriminalDAO;
+import fis.com.training.dao.util.DBMapper;
+import fis.com.training.dao.util.DatabaseUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +24,11 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
     @Override
     public boolean delete(long id) {
         return false;
+    }
+
+    @Override
+    public CriminalCase getCriminalById(long criminalId) {
+        return null;
     }
 
     @Override
@@ -49,23 +57,22 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
     @Override
     public List<CriminalCase> getAll() {
         List<CriminalCase> criminalCases = new ArrayList<>();
-        try (Connection con =
-             DriverManager.getConnection (URL, USER_NAME, PASSWORD);
-             PreparedStatement stmt = con.prepareStatement("SELECT * FROM criminal_case");
-             ResultSet rs = stmt.executeQuery ()) {
-
+        String sql = "SELECT * FROM criminal" ;
+        try (Connection con = DatabaseUtility.getConnection();
+             PreparedStatement stmt = con.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery();) {
             while (rs.next()) {
-                CriminalCase criminalCase = CriminalCaseMapper.get(rs);
-                if(criminalCase != null) criminalCases.add(criminalCase);
-            } // end of while
-        } catch (SQLException e) {
-            logger.error(e.toString());
-        } // end of try-with-resources
+                CriminalCase criminalCase = DBMapper.getCriminalCase(rs);
+                if (criminalCase != null) criminalCases.add(criminalCase);
+            }
+        } catch (Exception ex) {
+            logger.error(ex.getMessage());
+        }
         return criminalCases;
     }
 
     @Override
-    public void update(CriminalCase criminalCase) {
+    public Person update(CriminalCase criminalCase) {
         try(Connection con = DatabaseUtility.getConnection()) {
             PreparedStatement stmt =
                     con.prepareStatement("UPDATE criminalcase " +
@@ -87,6 +94,7 @@ public class JDBCCriminalCaseDAO implements ICriminalDAO {
         }catch (Exception ex) {
             logger.error(ex.toString());
         }
+        return criminalCase;
     }
 
     @Override

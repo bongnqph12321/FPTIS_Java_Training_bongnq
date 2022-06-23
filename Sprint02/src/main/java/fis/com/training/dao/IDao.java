@@ -1,5 +1,7 @@
 package fis.com.training.dao;
 
+import fis.com.training.core.object.Person;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -12,7 +14,7 @@ public interface IDao<T> {
     List<T> getAll();
 
     //UPDATE
-    void update(T t);
+    Person update(T t);
 
     //DELETE
     void delete(T t);

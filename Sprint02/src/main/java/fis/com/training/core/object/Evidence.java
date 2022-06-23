@@ -1,27 +1,32 @@
 package fis.com.training.core.object;
 
+import java.util.Objects;
 import java.util.Set;
 
-public class Evidence {
+public class Evidence extends AbstractEntity{
     private CriminalCase criminalCase;
     private Storage storage;
     private String number;
     private String itemName;
     private String notes;
-    private boolean archived;
-    private Set<TrackEntry> trackEntries;
+    private boolean archired;
+    private Set<TrackEntry> trackEntry;
+    public Evidence(){
 
-    public Evidence() {
     }
 
-    public Evidence(CriminalCase criminalCase, Storage storage, String number, String itemName, String notes, boolean archived, Set<TrackEntry> trackEntries) {
+    public Evidence(Long id, int version,CriminalCase criminalCase, Storage storage, String number, String itemName,
+                    String notes, boolean archired
+                    //, Set<TrackEntry> trackEntry
+    ) {
+        super(id,version);
         this.criminalCase = criminalCase;
         this.storage = storage;
         this.number = number;
         this.itemName = itemName;
         this.notes = notes;
-        this.archived = archived;
-        this.trackEntries = trackEntries;
+        this.archired = archired;
+        // this.trackEntry = trackEntry;
     }
 
     public CriminalCase getCriminalCase() {
@@ -64,19 +69,45 @@ public class Evidence {
         this.notes = notes;
     }
 
-    public boolean isArchived() {
-        return archived;
+    public boolean isArchired() {
+        return archired;
     }
 
-    public void setArchived(boolean archived) {
-        this.archived = archived;
+    public void setArchired(boolean archired) {
+        this.archired = archired;
     }
 
-    public Set<TrackEntry> getTrackEntries() {
-        return trackEntries;
+    public Set<TrackEntry> getTrackEntry() {
+        return trackEntry;
     }
 
-    public void setTrackEntries(Set<TrackEntry> trackEntries) {
-        this.trackEntries = trackEntries;
+    public void setTrackEntry(Set<TrackEntry> trackEntry) {
+        this.trackEntry = trackEntry;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Evidence)) return false;
+        Evidence evidence = (Evidence) o;
+        return archired == evidence.archired && criminalCase.equals(evidence.criminalCase) && storage.equals(evidence.storage) && number.equals(evidence.number) && itemName.equals(evidence.itemName) && notes.equals(evidence.notes) && trackEntry.equals(evidence.trackEntry);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(criminalCase, storage, number, itemName, notes, archired, trackEntry);
+    }
+
+    @Override
+    public String toString() {
+        return "Evidence{" +
+                "criminalCase=" + criminalCase +
+                ", storage=" + storage +
+                ", number='" + number + '\'' +
+                ", itemName='" + itemName + '\'' +
+                ", notes='" + notes + '\'' +
+                ", archired=" + archired +
+                //", trackEntry=" + trackEntry +
+                '}';
     }
 }

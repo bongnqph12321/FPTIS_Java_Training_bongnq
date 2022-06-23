@@ -1,4 +1,4 @@
-package fis.com.training.dao.jdbc;
+package fis.com.training.dao.util;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.zaxxer.hikari.HikariConfig;
@@ -12,26 +12,25 @@ public class DatabaseUtility {
     public final static String USER_NAME = "root";
     public final static String PASSWORD = "nguyenquybong199";
 
-    public static ComboPooledDataSource getDataSource()
-            throws PropertyVetoException
-    {
+
+    private static HikariConfig config = new HikariConfig();
+    private static HikariDataSource ds;
+
+    public static ComboPooledDataSource getDataSource() throws PropertyVetoException {
         ComboPooledDataSource cpds = new ComboPooledDataSource();
         cpds.setJdbcUrl(URL);
         cpds.setUser(USER_NAME);
         cpds.setPassword(PASSWORD);
 
-        // Optional Settings
         cpds.setInitialPoolSize(5);
         cpds.setMinPoolSize(5);
         cpds.setAcquireIncrement(5);
         cpds.setMaxPoolSize(20);
         cpds.setMaxStatements(100);
-
         return cpds;
     }
 
-    //No CP
-    public static Connection getConnection() throws Exception {
+    public static Connection getConnection() throws  Exception{
         // No connection pool
         // Connection con = DriverManager.getConnection (URL, USER_NAME, PASSWORD);
 
@@ -44,13 +43,8 @@ public class DatabaseUtility {
         return con;
     }
 
-    private static HikariDataSource ds;
-    private static HikariConfig config = new HikariConfig("datasource.properties");
-    //private static HikariConfig config = new HikariConfig();
-
-
     static {
-        config.setJdbcUrl( URL );
+        config.setJdbcUrl(URL);
         config.setUsername( USER_NAME );
         config.setPassword( PASSWORD );
         config.addDataSourceProperty( "cachePrepStmts" , "true" );

@@ -18,6 +18,9 @@ public abstract class AbstractEntity {
         this.modifiedAt = modifiedAt;
     }
 
+    public AbstractEntity(Long id, int version) {
+    }
+
     public long getId() {
         return id;
     }
@@ -48,5 +51,15 @@ public abstract class AbstractEntity {
 
     public void setModifiedAt(LocalDateTime modifiedAt) {
         this.modifiedAt = modifiedAt;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractEntity{" +
+                "id=" + id +
+                ", version=" + version +
+                ", createdAt=" + createdAt +
+                ", modifiedAt=" + modifiedAt +
+                '}';
     }
 }

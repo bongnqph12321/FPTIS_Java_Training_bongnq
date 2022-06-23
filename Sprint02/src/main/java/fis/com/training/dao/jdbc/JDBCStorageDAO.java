@@ -1,5 +1,7 @@
 package fis.com.training.dao.jdbc;
 
+import fis.com.training.core.object.Person;
+import fis.com.training.core.object.Storage;
 import fis.com.training.dao.IStorgeDAO;
 
 import java.util.List;
@@ -22,12 +24,18 @@ public class JDBCStorageDAO implements IStorgeDAO {
     }
 
     @Override
-    public void update(Object o) {
+    public Person update(Object o) {
 
+        return null;
     }
 
     @Override
     public void delete(Object o) {
 
+    }
+
+    @Override
+    public Storage getStorageById(long storageId) {
+        return null;
     }
 }
