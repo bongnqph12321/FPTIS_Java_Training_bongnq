@@ -11,7 +11,7 @@
         <module name="Sprint04" />
         <module name="fresher-oracle-java-ioo" />
         <module name="Sprint02" />
-        <module name="Sprint01" />
+        <module name="demo_security" />
         <module name="spring-boot-jdbc" />
         <module name="fis-training-collection-06-2022" />
         <module name="fis-training-test-02" />
@@ -20,6 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo_security" target="1.8" />
       <module name="Ex_Stack_Queue" target="16" />
       <module name="fis-training-collection-06-2022" target="16" />
       <module name="fis-training-test-02" target="1.8" />
@@ -41,6 +42,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Sprint04" options="-parameters" />
+      <module name="demo_security" options="-parameters" />
       <module name="fis-training-test-02" options="-parameters" />
       <module name="spring-boot-jdbc" options="-parameters" />
     </option>
