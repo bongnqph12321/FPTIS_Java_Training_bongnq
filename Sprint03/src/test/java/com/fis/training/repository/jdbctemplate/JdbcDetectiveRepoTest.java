@@ -68,10 +68,6 @@ class JdbcDetectiveRepoTest {
         System.out.println( detectiveRepo.findbyRank(Rank.JUNIOR));
     }
 
-    @Test
-    void delete() {
-
-    }
 
     @Test
     void deleteById() {

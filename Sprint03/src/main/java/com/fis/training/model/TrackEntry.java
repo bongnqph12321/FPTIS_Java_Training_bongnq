@@ -3,11 +3,12 @@ package com.fis.training.model;
 
 
 import com.fis.training.core.TrackAction;
+import lombok.Data;
 
 
 import javax.persistence.*;
 
-
+@Data
 @Entity
 @Table(name = "trackEntry")
 public class TrackEntry extends AbstractEntity{

@@ -3,12 +3,14 @@ package com.fis.training.model;
 
 
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 
-
+@Data
 @Entity
 @Table(name = "evidence")
 public class Evidence extends AbstractEntity{
