@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="fresher-excek-maven" />
         <module name="bongnq_Sprint02" />
+        <module name="Sprint04" />
         <module name="fresher-oracle-java-ioo" />
         <module name="Sprint02" />
         <module name="demo_security" />

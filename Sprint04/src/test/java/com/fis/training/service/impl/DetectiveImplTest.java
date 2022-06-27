@@ -2,7 +2,6 @@ package com.fis.training.service.impl;
 
 import com.fis.training.model.Detective;
 import com.fis.training.model.Person;
-import com.fis.training.model.core.CaseStatus;
 import com.fis.training.model.core.EmploymentStatus;
 import com.fis.training.model.core.Rank;
 import com.fis.training.repository.DetectiveRepository;
@@ -15,7 +14,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class DetectiveImplTest {
     @Autowired

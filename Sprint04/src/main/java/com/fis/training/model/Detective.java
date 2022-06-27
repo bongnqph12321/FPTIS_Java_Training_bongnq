@@ -3,7 +3,6 @@ package com.fis.training.model;
 
 
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fis.training.model.core.EmploymentStatus;
 import com.fis.training.model.core.Rank;
 import com.sun.istack.NotNull;
@@ -14,7 +13,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 
@@ -22,7 +20,6 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-//@JsonIgnoreProperties({"hibernateLazyInitializer"})
 @Table(name = "detective")
 public class Detective extends AbstractEntity{
     @NotNull

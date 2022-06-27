@@ -4,14 +4,11 @@ import com.fis.training.model.CriminalCase;
 import com.fis.training.model.core.CaseStatus;
 import com.fis.training.model.core.CaseType;
 import com.fis.training.service.CriminalCaseService;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class CriminalCaseImplTest {
