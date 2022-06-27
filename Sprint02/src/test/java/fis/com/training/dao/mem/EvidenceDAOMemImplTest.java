@@ -51,7 +51,7 @@ class EvidenceDAOMemImplTest {
     void delete() {
         IEvidenceDAO e = new EvidenceDAOMemImpl();
 
-        e.delete(1L);
+        e.deleteById(1L);
 
         assertNotEquals(1,e.getEvidenceById(1L));
     }

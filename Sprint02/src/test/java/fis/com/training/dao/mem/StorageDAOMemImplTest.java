@@ -13,7 +13,7 @@ class StorageDAOMemImplTest {
     @Test
     void save() {
         IStorgeDAO s = new StorageDAOMemImpl();
-        Storage st = new Storage(3l, 004, "Bm", "FHN");
+        Storage st = new Storage(2l, 0041, "Am", "VAVN");
 
         s.save(st);
         long id = st.getId();

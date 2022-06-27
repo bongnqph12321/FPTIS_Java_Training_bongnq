@@ -35,6 +35,11 @@ public class JDBCEvidenceDAO implements IEvidenceDAO {
     }
 
     @Override
+    public void deleteById(Long Id) {
+
+    }
+
+    @Override
     public Evidence getEvidenceById(long evidenceId) {
         return null;
     }

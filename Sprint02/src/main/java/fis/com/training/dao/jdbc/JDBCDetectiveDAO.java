@@ -56,6 +56,11 @@ public class JDBCDetectiveDAO implements IDetectiveDAO {
     }
 
     @Override
+    public void deleteById(Long id) {
+
+    }
+
+    @Override
     public Detective getDetectiveById(long leadDetective) {
         return null;
     }

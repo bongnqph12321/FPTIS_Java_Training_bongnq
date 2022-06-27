@@ -54,7 +54,7 @@ class DetectiveDAOMemImplTest {
     void delete() {
         IDetectiveDAO d = new DetectiveDAOMemImpl();
 
-        d.delete(1l);
+        d.deleteById(1l);
 
         assertNotEquals(5L,d.getAll().size());
     }

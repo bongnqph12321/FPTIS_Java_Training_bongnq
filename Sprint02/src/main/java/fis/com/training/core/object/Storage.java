@@ -16,6 +16,10 @@ public class Storage extends AbstractEntity{
         this.evidenceSet = evidenceSet;
     }
 
+    public Storage(long l, int i, String am, String vavn) {
+    }
+
+
     public String getName() {
         return name;
     }
