@@ -2,6 +2,7 @@ package com.fis.training.service.impl;
 
 
 import com.fis.training.model.Detective;
+import com.fis.training.model.core.Rank;
 import com.fis.training.repository.DetectiveRepository;
 import com.fis.training.service.DetectiveService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,5 +41,10 @@ public class DetectiveImpl implements DetectiveService {
     @Override
     public List<Detective> findAll() {
         return detectiveRepository.findAll();
+    }
+
+    @Override
+    public Detective findByRank(Rank rank) {
+        return detectiveRepository.findByRank(rank);
     }
 }
