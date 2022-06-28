@@ -1,20 +1,13 @@
 package com.fis.training.service.impl;
 
-import com.fis.training.core.CaseStatus;
-import com.fis.training.core.CaseType;
+
 import com.fis.training.model.CriminalCase;
-import com.fis.training.model.Detective;
 import com.fis.training.model.Evidence;
 import com.fis.training.model.Storage;
-import com.fis.training.repository.jdbctemplate.JdbcDetectiveRepoTest;
-import com.fis.training.repository.jpa.EvidenceRepository;
 import com.fis.training.service.CriminalCaseService;
 import com.fis.training.service.EvidenceService;
 import com.fis.training.service.StorageService;
-import com.fis.training.service.TrackEntryService;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -64,7 +57,7 @@ class EvidenceImplTest {
 
     @Test
     void findAll() {
-        System.out.println(EvidenceService.findAll());
+        //System.out.println(EvidenceService.findAll());
         assertEquals(2,evidenceService.findAll().size());
     }
 }

@@ -65,10 +65,10 @@ class CriminalCaseImplTest {
         criminalCase.setCreatedAt(LocalDateTime.now());
         criminalCase.setModifiedAt(LocalDateTime.now());
         criminalCase.setVersion(2);
-        criminalCase.setDetailedDescription("knduidioa");
-        criminalCase.setNotes("nodanda");
-        criminalCase.setNumber("231124");
-        criminalCase.setShortDescription("009897087");
+        criminalCase.setDetailedDescription("DetailDes");
+        criminalCase.setNotes("bongNa");
+        criminalCase.setNumber("1234");
+        criminalCase.setShortDescription("0099999");
         criminalCase.setStatus(CaseStatus.valueOf("SUBMITTED"));
         criminalCase.setType(CaseType.valueOf("UNCATEGORIZED"));
         Detective person = new Detective();
